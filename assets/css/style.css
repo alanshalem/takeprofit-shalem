@@ -1,0 +1,351 @@
+@charset "UTF-8";
+/*LLEVO TODO A CERO*/
+/*ESTO ARREGLA EL TEMA DE LA FRANJA DEL MEDIO, ERA UNA CLASE QUE YA VENIA CON BOOTSTRAP*/
+/*INICIO DEL NAVBAR*/
+/*COLOR DE FONDO DEL NAVBAR*/
+/*FUENTE DEL NAVBAR*/
+/*ESTA PARTE NO LA PUEDO HACER FUNCIONAR, QUIERO QUE AL HACER HOVER SOBRE EL TITULO DE LA PAGINA CAMBIE DE COLOR*/
+/*IMPORTANTE! CORREGIR*/
+/*COLOR DE LA FUENTE DEL NAVBAR Y LOS TAMAÑOS*/
+/*ACA TOCO EL COLOR DE LA FUENTE DEL NAVBAR CUANDO HAGO HOVER*/
+/*BOTON DEL NAVBAR QUE ME LLEVA AL LOGIN/REGISTRO*/
+/*FIN DEL NAVBAR*/
+/*INICIO DEL VIDEO INDEX*/
+/*FIN DEL VIDEO*/
+/*COMIENZO 1º SECCION: FONDO NEGRO, LETRAS A LA IZQUIERDA, IMAGEN A LA DERECHA*/
+/*FIN 1º SECCION*/
+/*INICIO 2º SECCION: FONDO BLANCO, LETRAS A LA DERECHA, IMAGEN A LA IZQUIERDA*/
+/*FIN 2º SECCION*/
+/*INICIO 3º SECCION: FONDO NEGRO, CAJA BLANCA EN EL CENTRO CON TEXTO NEGRO*/
+/*INICIO 4º SECCION: FONDO NEGRO, CAJA BLANCA EN EL CENTRO CON TEXTO NEGRO*/
+/*INICIO CAROUSEL*/
+/* POSICIONAMOS EL TEXTO */
+/* DECLARAMOS LA ALTURA PARA EL POSICIONAMIENTO DEL ELEMENTO DE IMAGEN */
+/*FIN CAROUSEL*/
+/*INICIO CONTACTO*/
+/*INICIO FOOTER*/
+/*FIN FOOTER*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.row {
+  --bs-gutter-x: 0rem;
+}
+
+.navbar {
+  background-color: #000000;
+  padding: 1rem 8rem;
+  z-index: 10;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+body > header > nav > a:hover {
+  color: #00aaff;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0 0.8rem;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover {
+  color: #00aaff;
+}
+
+#navbarSupportedContent > button {
+  background: #00aaff;
+  font-weight: 600;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.mid {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+.mid video {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.mid .hero {
+  position: relative;
+}
+
+.mid .hero p {
+  width: 60%;
+  font-size: 1.1rem;
+  letter-spacing: 0.2px;
+  padding-bottom: 1.1rem;
+  animation-duration: 1s;
+	animation-name: transitionIn;
+}
+  
+  @keyframes transitionIn {
+	from {
+		opacity: 0;
+		transform: rotateX(-20deg);
+	}
+  
+	to {
+		opacity: 1;
+		transform: rotateX(0deg);
+	}
+  }
+
+.section_1 {
+  background-color: #000000;
+}
+
+.section_1 .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: auto;
+  animation-duration: 1s;
+	animation-name: transitionIn;
+}
+
+.section_1 .text h6 {
+  color: #00aaff;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.section_1 .text h2 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1rem;
+  font-size: 2.7rem;
+}
+
+.section_1 .text p {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.1px;
+}
+
+.section_1 .text a {
+  background: #00aaff;
+  font-weight: 600;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.section_2 {
+  background-color: #fff;
+}
+
+.section_2 .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: auto;
+  animation-duration: 1s;
+	animation-name: transitionIn;
+}
+
+.section_2 .text h6 {
+  color: #00aaff;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.section_2 .text h2 {
+  color: #000000;
+  font-weight: 800;
+  font-size: 1rem;
+  font-size: 2.7rem;
+}
+
+.section_2 .text p {
+  color: #000000;
+  font-weight: 800;
+  font-size: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.1px;
+}
+
+.section_2 .text a {
+  background: #000;
+  font-weight: 500;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.section_3 {
+  background: #000000;
+}
+
+.section_3 .box {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+}
+
+.section_3 .box a {
+  background: #00aaff;
+  font-weight: 600;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.section_4 {
+  background-color: #fff;
+}
+
+.section_4 .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: auto;
+  animation-duration: 1s;
+	animation-name: transitionIn;
+}
+
+.section_4 .text h6 {
+  color: #00aaff;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.section_4 .text h2 {
+  color: #000000;
+  font-weight: 800;
+  font-size: 1rem;
+  font-size: 2.7rem;
+}
+
+.section_4 .text p {
+  color: #000000;
+  font-weight: 800;
+  font-size: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.1px;
+}
+
+.section_4 .text a {
+  background: #000;
+  font-weight: 500;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 1;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.info_cursos {
+  text-align: left;
+}
+
+.head {
+  background: url(../../img/stocks-market.jpg) no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+}
+
+.footer {
+  background-color: #000000;
+}
+/*# sourceMappingURL=style.css.map */
