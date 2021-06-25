@@ -1,0 +1,7 @@
+# TAKEPROFIT
+
+_TAKEPROFIT - STACK: HTML5 - CSS3 - BOOTSTRAP - SCSS_
+
+## PREVIEW 🚀
+
+![TAKEPROFIT SHALEM](https://i.imgur.com/ohS5AH6.png)
