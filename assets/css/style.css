@@ -1,41 +1,19 @@
 @charset "UTF-8";
-/*LLEVO TODO A CERO*/
-/*ESTO ARREGLA EL TEMA DE LA FRANJA DEL MEDIO, ERA UNA CLASE QUE YA VENIA CON BOOTSTRAP*/
-/*INICIO DEL NAVBAR*/
-/*COLOR DE FONDO DEL NAVBAR*/
-/*FUENTE DEL NAVBAR*/
-/*ESTA PARTE NO LA PUEDO HACER FUNCIONAR, QUIERO QUE AL HACER HOVER SOBRE EL TITULO DE LA PAGINA CAMBIE DE COLOR*/
-/*IMPORTANTE! CORREGIR*/
-/*COLOR DE LA FUENTE DEL NAVBAR Y LOS TAMAÑOS*/
-/*ACA TOCO EL COLOR DE LA FUENTE DEL NAVBAR CUANDO HAGO HOVER*/
-/*BOTON DEL NAVBAR QUE ME LLEVA AL LOGIN/REGISTRO*/
-/*FIN DEL NAVBAR*/
-/*INICIO DEL VIDEO INDEX*/
-/*FIN DEL VIDEO*/
-/*COMIENZO 1º SECCION: FONDO NEGRO, LETRAS A LA IZQUIERDA, IMAGEN A LA DERECHA*/
-/*FIN 1º SECCION*/
-/*INICIO 2º SECCION: FONDO BLANCO, LETRAS A LA DERECHA, IMAGEN A LA IZQUIERDA*/
-/*FIN 2º SECCION*/
-/*INICIO 3º SECCION: FONDO NEGRO, CAJA BLANCA EN EL CENTRO CON TEXTO NEGRO*/
-/*INICIO 4º SECCION: FONDO NEGRO, CAJA BLANCA EN EL CENTRO CON TEXTO NEGRO*/
-/*INICIO CAROUSEL*/
-/* POSICIONAMOS EL TEXTO */
-/* DECLARAMOS LA ALTURA PARA EL POSICIONAMIENTO DEL ELEMENTO DE IMAGEN */
-/*FIN CAROUSEL*/
-/*INICIO CONTACTO*/
-/*INICIO FOOTER*/
-/*FIN FOOTER*/
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
 .row {
   --bs-gutter-x: 0rem;
 }
+
+/*MEDIA QUERY*/
+@media all and (max-width: 900px) {}
 
 .navbar {
   background-color: #000000;
@@ -48,21 +26,21 @@
   font-weight: 800;
 }
 
-body > header > nav > a:hover {
+body>header>nav>a:hover {
   color: #00aaff;
 }
 
-#navbarSupportedContent > ul > li:nth-child(n) > a {
+#navbarSupportedContent>ul>li:nth-child(n)>a {
   color: #fff;
   font-size: 1.1rem;
   padding: 0 0.8rem;
 }
 
-#navbarSupportedContent > ul > li:nth-child(n) > a:hover {
+#navbarSupportedContent>ul>li:nth-child(n)>a:hover {
   color: #00aaff;
 }
 
-#navbarSupportedContent > button {
+#navbarSupportedContent>button {
   background: #00aaff;
   font-weight: 600;
   padding: 0.4rem 1.4rem;
@@ -79,30 +57,37 @@ body > header > nav > a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   text-align: center;
 }
 
-.mid video {
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.mid {
+  background-image: url(../../img/MARKETBACKGROUDNGIF_1.gif);
+  background-size: cover;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.mid-members {
+  background-image: url(../../img/MARKETBACKGROUDNGIF_2.gif);
+  background-size: cover;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
 .mid .hero {
+  position: relative;
+}
+
+.navbar {
   position: relative;
 }
 
@@ -112,20 +97,77 @@ body > header > nav > a:hover {
   letter-spacing: 0.2px;
   padding-bottom: 1.1rem;
   animation-duration: 1s;
-	animation-name: transitionIn;
+  animation-name: transitionIn;
 }
-  
-  @keyframes transitionIn {
-	from {
-		opacity: 0;
-		transform: rotateX(-20deg);
-	}
-  
-	to {
-		opacity: 1;
-		transform: rotateX(0deg);
-	}
+
+.mid-members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.formulario_registro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 30%;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #fff;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+
+/*MEDIA QUERY*/
+@media all and (max-width: 1000px) {
+  .mid {
+    height: 90%;
   }
+
+  .section_1 {
+    position: relative;
+  }
+
+  .btn {
+    margin-bottom: 10px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .section_1 {
+    position: relative;
+  }
+
+  .achicar {
+    display: none;
+  }
+
+  .mid {
+    min-height: 250px;
+  }
+
+  video {
+    height: auto;
+  }
+
+  #boton_index {
+    margin: 100px;
+  }
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-20deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
 
 .section_1 {
   background-color: #000000;
@@ -137,17 +179,17 @@ body > header > nav > a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   margin: auto;
   animation-duration: 1s;
-	animation-name: transitionIn;
+  animation-name: transitionIn;
 }
 
 .section_1 .text h6 {
@@ -190,17 +232,17 @@ body > header > nav > a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   margin: auto;
   animation-duration: 1s;
-	animation-name: transitionIn;
+  animation-name: transitionIn;
 }
 
 .section_2 .text h6 {
@@ -233,6 +275,10 @@ body > header > nav > a:hover {
   color: #fff;
 }
 
+.forex_crypto {
+  background-color: #000;
+}
+
 .section_3 {
   background: #000000;
 }
@@ -244,14 +290,14 @@ body > header > nav > a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   padding: 2rem 1.5rem;
   border-radius: 10px;
@@ -275,17 +321,17 @@ body > header > nav > a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   margin: auto;
   animation-duration: 1s;
-	animation-name: transitionIn;
+  animation-name: transitionIn;
 }
 
 .section_4 .text h6 {
@@ -327,7 +373,7 @@ body > header > nav > a:hover {
   height: 32rem;
 }
 
-.carousel-item > img {
+.carousel-item>img {
   position: absolute;
   top: 0;
   left: 0;
@@ -343,9 +389,76 @@ body > header > nav > a:hover {
   background: url(../../img/stocks-market.jpg) no-repeat;
   background-size: 100% 100%;
   width: 100%;
+  height: 100vh;
+  display: flex;
 }
 
 .footer {
   background-color: #000000;
 }
+
 /*# sourceMappingURL=style.css.map */
+
+.contenedor_contacto {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  padding: auto;
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 25px;
+  display: flex;
+}
+
+.columna_left {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 2em;
+}
+
+.columna_right {
+  flex: 1;
+  padding: 2em;
+}
+
+/*font-size: 30px; color: coral;*/
+
+#contactanos {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+@media all and (max-width: 550px) {
+  li {
+    font-size: 10px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .contenedor_contacto {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .head {
+    height: auto;
+    margin: auto;
+    padding: auto;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .head {
+    font-size: 75%;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 770px) {
+  .carousel-container {
+    display: none;
+  }
+}

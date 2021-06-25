@@ -1,47 +1,25 @@
-/*LLEVO TODO A CERO*/
-/*ESTO ARREGLA EL TEMA DE LA FRANJA DEL MEDIO, ERA UNA CLASE QUE YA VENIA CON BOOTSTRAP*/
-/*INICIO DEL NAVBAR*/
-/*COLOR DE FONDO DEL NAVBAR*/
-/*FUENTE DEL NAVBAR*/
-/*ESTA PARTE NO LA PUEDO HACER FUNCIONAR, QUIERO QUE AL HACER HOVER SOBRE EL TITULO DE LA PAGINA CAMBIE DE COLOR*/
-/*IMPORTANTE! CORREGIR*/
-/*COLOR DE LA FUENTE DEL NAVBAR Y LOS TAMAÑOS*/
-/*ACA TOCO EL COLOR DE LA FUENTE DEL NAVBAR CUANDO HAGO HOVER*/
-/*BOTON DEL NAVBAR QUE ME LLEVA AL LOGIN/REGISTRO*/
-/*FIN DEL NAVBAR*/
-/*INICIO DEL VIDEO INDEX*/
-/*FIN DEL VIDEO*/
-/*COMIENZO 1º SECCION: FONDO NEGRO, LETRAS A LA IZQUIERDA, IMAGEN A LA DERECHA*/
-/*FIN 1º SECCION*/
-/*INICIO 2º SECCION: FONDO BLANCO, LETRAS A LA DERECHA, IMAGEN A LA IZQUIERDA*/
-/*FIN 2º SECCION*/
-/*INICIO 3º SECCION: FONDO NEGRO, CAJA BLANCA EN EL CENTRO CON TEXTO NEGRO*/
-/*INICIO 4º SECCION: FONDO NEGRO, CAJA BLANCA EN EL CENTRO CON TEXTO NEGRO*/
-/*INICIO CAROUSEL*/
-/* POSICIONAMOS EL TEXTO */
-/* DECLARAMOS LA ALTURA PARA EL POSICIONAMIENTO DEL ELEMENTO DE IMAGEN */
-/*FIN CAROUSEL*/
-/*INICIO CONTACTO*/
-/*INICIO FOOTER*/
-/*FIN FOOTER*/
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
 }
+
 .row {
 	--bs-gutter-x: 0rem;
 }
+
 .navbar {
 	background-color: #000000;
 	padding: 1rem 8rem;
 	z-index: 10;
+
 	.navbar-brand {
 		font-size: 1.4rem;
 		font-weight: 800;
 	}
 }
+
 body {
 	>header {
 		>nav {
@@ -53,6 +31,7 @@ body {
 		}
 	}
 }
+
 #navbarSupportedContent {
 	>ul {
 		>li {
@@ -61,6 +40,7 @@ body {
 					color: #fff;
 					font-size: 1.1rem;
 					padding: 0 0.8rem;
+
 					&:hover {
 						color: #00aaff;
 					}
@@ -68,6 +48,7 @@ body {
 			}
 		}
 	}
+
 	>button {
 		background: #00aaff;
 		font-weight: 600;
@@ -76,6 +57,7 @@ body {
 		text-decoration: none;
 	}
 }
+
 .mid {
 	width: 100%;
 	height: 100vh;
@@ -85,6 +67,7 @@ body {
 	justify-content: center;
 	align-content: center;
 	text-align: center;
+
 	video {
 		width: 100%;
 		height: 100%;
@@ -95,8 +78,10 @@ body {
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
+
 	.hero {
 		position: relative;
+
 		p {
 			width: 60%;
 			font-size: 1.1rem;
@@ -105,26 +90,31 @@ body {
 		}
 	}
 }
+
 .section_1 {
 	background-color: #000000;
+
 	.text {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-start;
 		margin: auto;
+
 		h6 {
 			color: #00aaff;
 			font-weight: 800;
 			font-size: 1rem;
 			letter-spacing: 2px;
 		}
+
 		h2 {
 			color: #fff;
 			font-weight: 800;
 			font-size: 1rem;
 			font-size: 2.7rem;
 		}
+
 		p {
 			color: #fff;
 			font-weight: 800;
@@ -132,6 +122,7 @@ body {
 			font-size: 1.1rem;
 			letter-spacing: 0.1px;
 		}
+
 		a {
 			background: #00aaff;
 			font-weight: 600;
@@ -141,26 +132,31 @@ body {
 		}
 	}
 }
+
 .section_2 {
 	background-color: #fff;
+
 	.text {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-start;
 		margin: auto;
+
 		h6 {
 			color: #00aaff;
 			font-weight: 800;
 			font-size: 1rem;
 			letter-spacing: 2px;
 		}
+
 		h2 {
 			color: #000000;
 			font-weight: 800;
 			font-size: 1rem;
 			font-size: 2.7rem;
 		}
+
 		p {
 			color: #000000;
 			font-weight: 800;
@@ -168,6 +164,7 @@ body {
 			font-size: 1.1rem;
 			letter-spacing: 0.1px;
 		}
+
 		a {
 			background: #000;
 			font-weight: 500;
@@ -177,8 +174,10 @@ body {
 		}
 	}
 }
+
 .section_3 {
 	background: #000000;
+
 	.box {
 		background: #fff;
 		display: flex;
@@ -188,6 +187,7 @@ body {
 		text-align: center;
 		padding: 2rem 1.5rem;
 		border-radius: 10px;
+
 		a {
 			background: #00aaff;
 			font-weight: 600;
@@ -197,26 +197,31 @@ body {
 		}
 	}
 }
+
 .section_4 {
 	background-color: #fff;
+
 	.text {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-start;
 		margin: auto;
+
 		h6 {
 			color: #00aaff;
 			font-weight: 800;
 			font-size: 1rem;
 			letter-spacing: 2px;
 		}
+
 		h2 {
 			color: #000000;
 			font-weight: 800;
 			font-size: 1rem;
 			font-size: 2.7rem;
 		}
+
 		p {
 			color: #000000;
 			font-weight: 800;
@@ -224,6 +229,7 @@ body {
 			font-size: 1.1rem;
 			letter-spacing: 0.1px;
 		}
+
 		a {
 			background: #000;
 			font-weight: 500;
@@ -233,12 +239,15 @@ body {
 		}
 	}
 }
+
 .carousel-caption {
 	bottom: 3rem;
 	z-index: 1;
 }
+
 .carousel-item {
 	height: 32rem;
+
 	>img {
 		position: absolute;
 		top: 0;
@@ -247,14 +256,17 @@ body {
 		height: 32rem;
 	}
 }
+
 .info_cursos {
 	text-align: left;
 }
+
 .head {
 	background: url(../../img/stocks-market.jpg)no-repeat;
 	background-size: 100% 100%;
 	width: 100%;
 }
+
 .footer {
 	background-color: #000000;
 }
